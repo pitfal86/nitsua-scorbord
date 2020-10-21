@@ -6,6 +6,7 @@ function insertLink(title, url) {
 }
 
 Meteor.startup(() => {
+    //debugger
   // If the Links collection is empty, add some data.
   if (Links.find().count() === 0) {
     insertLink(
